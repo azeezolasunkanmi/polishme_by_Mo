@@ -1,0 +1,15 @@
+{
+  "name": "salon",
+  "version": "1.0.0",
+  "description": "nail salon",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "azeez",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}

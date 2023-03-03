@@ -1,0 +1,821 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  /* SECTION ONE HEADER */
+
+  .nav-links h2.logo {
+    font-size: 25px;
+  }
+
+  div.nav-links {
+    padding: 5px;
+    display: block;
+    position: relative;
+  }
+
+  .links-container {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .nav-links nav ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    padding-top: 35px;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* background-color: black; */
+    z-index: 1;
+    height: 40vh;
+  }
+
+  .nav-links nav ul li a {
+    text-align: left;
+    color: #ccc;
+    transition: all 0.5s linear;
+  }
+
+  .nav-links nav ul li a:hover {
+    background-color: #ddd;
+    margin-left: 10px;
+    color: black;
+  }
+
+  .nav-links nav ul li.last-child a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-links nav ul li.last-child a {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 0px;
+  }
+
+  span.hambuger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 10px;
+    z-index: 2;
+    transition: all 0.5s linear;
+  }
+
+  span.hambuger:hover {
+    transform: rotate(90deg);
+  }
+
+  div.house-of-nails {
+    margin-top: 0px;
+  }
+
+  div.house-of-nails h1 {
+    top: 40%;
+    max-width: 60%;
+    text-align: center;
+  }
+
+  /* SECTION TWO */
+
+  section.welcome {
+    display: block;
+    overflow: hidden;
+    height: auto;
+  }
+
+  div.welcome-item {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  div.welcome-item:first-child {
+    display: none;
+  }
+
+  div.welcome-article {
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  div.welcome-article h2 {
+    font-size: 25px;
+  }
+
+  .img-div2 {
+    display: none;
+  }
+
+  /* SECTION THREE SERVICES */
+  div.service-header {
+    margin: 10px 0px;
+    font-size: 16px;
+  }
+
+  div.tab {
+    width: 100%;
+  }
+
+  div.tab > button {
+    margin: 0;
+    padding: 12px 14px;
+    font-size: 11px;
+  }
+
+  div.tab-content > div {
+    width: 70%;
+    height: 500px;
+  }
+
+  div.tab-content > div h3 {
+    padding: 0 5px;
+    margin-top: 30px;
+  }
+
+  /* SECTION FOUR TECHNICIANS */
+
+  body > section#technician {
+    display: block;
+  }
+
+  div.technician-image {
+    width: 80%;
+    margin: auto;
+  }
+
+  div.technician-text {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* SECTION FIVE FOOTER */
+
+  .footer.footer > div {
+    width: 44%;
+    margin: 10px;
+  }
+
+  section.footer > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .copyright {
+    margin: auto;
+    width: 80%;
+    border-top: 2px solid #ffe5d9;
+  }
+
+  div.form-container {
+    width: 80%;
+  }
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media (min-width: 600px) and (max-width: 821px) {
+  /* SECTION ONE */
+  div.nav-links {
+    max-width: 100%;
+    padding: 10px;
+    position: relative;
+  }
+
+  span.logo-name {
+    display: none;
+  }
+
+  a.logo-image {
+    font-size: 40px;
+  }
+
+  .nav-links nav ul li a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  div.house-of-nails {
+    margin-top: 15vh;
+  }
+
+  div.house-of-nails h1 {
+    top: 35%;
+    max-width: 60%;
+    text-align: center;
+  }
+  /* SECTION TWO */
+  section.welcome {
+    display: block;
+    overflow: hidden;
+    height: auto;
+  }
+
+  div.welcome-item {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  div.welcome-item:first-child {
+    display: none;
+  }
+  .img-div2 {
+    display: none;
+  }
+
+  /* SECTION THREE SERVICES */
+  div.service-header {
+    margin: 10px 0px;
+    font-size: 21px;
+  }
+
+  div.tab {
+    width: 100%;
+  }
+  div.tab > button {
+    margin: 0px 5px;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  div.tab-content > div {
+    width: 40%;
+  }
+
+  div.tab-content > div h3 {
+    padding: 0 5px;
+    margin-top: 30px;
+  }
+
+  /* SECTION FOUR TECHNICIANS */
+
+  body > section#technician {
+    display: block;
+  }
+
+  div.technician-image {
+    width: 80%;
+    margin: auto;
+  }
+
+  div.technician-text {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* SECTION FIVE FOOTER */
+
+  .footer.footer > div {
+    width: 44%;
+    margin: 10px;
+  }
+
+  section.footer > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .copyright {
+    margin: auto;
+    width: 80%;
+    font-size: 19px;
+    border-top: 2px solid #ffe5d9;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+  body header {
+    min-height: 80vh;
+  }
+
+  section.overlay {
+    height: 80vh;
+  }
+
+  div.nav-links {
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  .nav-links nav ul li a {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .nav-links h2.logo {
+    font-size: 25px;
+  }
+  div.house-of-nails {
+    /* position: relative; */
+    margin-top: 30vh;
+  }
+
+  div.house-of-nails h1 {
+    top: 35%;
+    right: 25%;
+    max-width: 40%;
+    text-align: center;
+  }
+
+  /* SECTION TWO */
+  section.welcome {
+    display: block;
+    overflow: hidden;
+    height: auto;
+  }
+
+  div.welcome-article {
+    margin-bottom: 30px;
+  }
+
+  div.welcome-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  div.welcome-item:first-child {
+    display: none;
+  }
+
+  div.img-div2 {
+    height: 400px;
+  }
+
+  /* SECTION THREE SERVICES */
+  div.service-header {
+    margin: 10px 0px;
+  }
+
+  div.tab {
+    width: 80%;
+  }
+
+  div.tab > button {
+    margin: 0;
+    padding: 14px 16px;
+  }
+
+  div.tab-content > div {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1370px) {
+  div.nav-links {
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+}
+/* ////////////////////////////////////////////////// */
+
+html {
+  scroll-behavior: smooth;
+}
+/* SECTION ONE */
+header {
+  min-height: 100vh;
+  background-image: url("img/nail15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+.hambuger {
+  display: none;
+}
+
+.white-bar {
+  color: white;
+}
+
+nav {
+  overflow: hidden;
+}
+.nav-links {
+  max-width: 100%;
+  margin: auto;
+  padding: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.fixed-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  color: black;
+  z-index: 100;
+}
+
+.show {
+  display: block;
+}
+
+h2.logo {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0; /*Remove later */
+}
+
+h2.logo a {
+  color: black;
+  text-decoration: none;
+  padding: 0; /*Remove later*/
+  cursor: pointer;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.nav-links li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 14px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.nav-links li :hover {
+  color: rgb(215, 204, 204);
+}
+
+li.last-child a {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
+
+li.last-child a:hover {
+  background-color: black;
+  color: white;
+}
+
+.house-of-nails {
+  margin-top: 30vh;
+}
+
+.house-of-nails h1 {
+  position: absolute;
+  right: 15%;
+  max-width: 10%;
+  color: white;
+  text-align: right;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/* SECTION TWO WELCOME */
+
+.welcome {
+  display: flex;
+  overflow: hidden;
+  height: 130vh;
+}
+
+.welcome-item {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.welcome-article {
+  padding: 10px;
+  max-width: 70%;
+  height: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.welcome-article h3,
+h2,
+p {
+  padding: 10px;
+}
+
+.welcome-article h2 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.welcome-img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-div1 {
+  width: 100%;
+  height: 100%;
+}
+
+.img-div2 {
+  width: 100%;
+  height: 60%;
+}
+
+/* SECTION THREE SERVICES*/
+.services {
+  padding: 20px;
+  overflow: hidden;
+  background-color: #ffe5d9;
+}
+
+.service-header {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.tab {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid;
+  overflow: hidden;
+}
+
+.tablinks {
+  margin: 0px 20px;
+  padding: 14px 16px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+.tablinks.active {
+  border-bottom: 3px solid;
+  border-radius: 0;
+}
+
+.tablinks:hover {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.tab-content > div {
+  background-color: white;
+  width: 20%;
+  height: 500px;
+  margin: 50px 20px;
+  border-radius: 4px;
+  text-align: center;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.tab-content > div img {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.tab-content > div h3 {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.tab-content > div p {
+  font-size: 18px;
+}
+
+.service-links {
+  display: block;
+  cursor: pointer;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+  color: #ddd;
+  margin: 20px;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.service-links:hover {
+  opacity: 1;
+}
+
+/* SECTION FOUR TECHNICIAN */
+section#technician {
+  margin: 40px 10px;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.technician-image {
+  width: 30%;
+  margin: 0px 20px;
+}
+
+.technician-image img {
+  width: 100%;
+  border-radius: 20px;
+  background-color: bisque;
+  padding: 5px;
+}
+
+.technician-text {
+  width: 30%;
+  margin: 0px 20px;
+}
+
+.technician-text h3 {
+  padding: 10px;
+}
+
+/* SECTION FIVE FOOTER */
+
+.footer-container {
+  margin: 70px 0px;
+}
+
+section.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+section.footer > div {
+  width: 22%;
+  margin: 0px 10px;
+  border-right: 3px solid #ffe5d9;
+}
+
+section.footer > div h3,
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+section.footer > div:last-child {
+  border-right: none;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 2px solid #ffe5d9;
+}
+
+.go-up {
+  position: fixed;
+  visibility: hidden;
+  z-index: -100;
+  bottom: 3rem;
+  right: 3rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: aqua;
+  border-radius: 4px;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.show-up {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form-container {
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+}
+
+form {
+  padding: 40px 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 51, 56, 0.5);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-form {
+  visibility: visible;
+  z-index: 10;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: hsl(360, 67%, 44%);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.close-btn:hover {
+  color: hsl(360, 71%, 66%);
+  transform: scale(1.3);
+}
